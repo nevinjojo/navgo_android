@@ -8,7 +8,7 @@
 // THE ILLEGAL DISTRIBUTION IS PROHIBITED
 //
 
-package com.iuriidolotov.sleepytime.Fragments
+package com.ccdhb.navgo.Fragments
 
 
 import android.os.Bundle
@@ -17,9 +17,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.github.florent37.viewanimator.ViewAnimator
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
-import com.iuriidolotov.sleepytime.R
+import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.breath_layout.*
 
 

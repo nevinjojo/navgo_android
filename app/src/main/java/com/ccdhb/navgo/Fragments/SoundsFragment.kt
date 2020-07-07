@@ -1,4 +1,4 @@
-package com.iuriidolotov.sleepytime.Fragments
+package com.ccdhb.navgo.Fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,10 +12,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.*
-import com.iuriidolotov.sleepytime.Activities.PlayerActivity
-import com.iuriidolotov.sleepytime.Models.Model
-import com.iuriidolotov.sleepytime.R
-import kotlinx.android.synthetic.main.breath_layout.*
+import com.ccdhb.navgo.Activities.PlayerActivity
+import com.ccdhb.navgo.Models.Model
+import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.cardview_audios_layout.view.*
 import kotlinx.android.synthetic.main.table_layout.*
 

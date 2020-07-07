@@ -1,13 +1,12 @@
-package com.iuriidolotov.sleepytime.Activities
+package com.ccdhb.navgo.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.iuriidolotov.sleepytime.Fragments.BreathFragment
-import com.iuriidolotov.sleepytime.Fragments.HomeFragment
-import com.iuriidolotov.sleepytime.Fragments.SettingsFragment
-import com.iuriidolotov.sleepytime.R
-import com.iuriidolotov.sleepytime.Fragments.SoundsFragment
+import com.ccdhb.navgo.Fragments.BreathFragment
+import com.ccdhb.navgo.Fragments.HomeFragment
+import com.ccdhb.navgo.R
+import com.ccdhb.navgo.Fragments.SoundsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.iuriidolotov.sleepytime
+package com.ccdhb.navgo
 
 import org.junit.Test
 

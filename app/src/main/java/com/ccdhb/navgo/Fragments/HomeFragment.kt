@@ -8,10 +8,9 @@
 // THE ILLEGAL DISTRIBUTION IS PROHIBITED
 //
 
-package com.iuriidolotov.sleepytime.Fragments
+package com.ccdhb.navgo.Fragments
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,13 +23,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.*
-import com.iuriidolotov.sleepytime.Activities.PlayerActivity
-import com.iuriidolotov.sleepytime.Models.Model
-import com.iuriidolotov.sleepytime.R
+import com.ccdhb.navgo.Activities.PlayerActivity
+import com.ccdhb.navgo.Models.Model
+import com.ccdhb.navgo.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.cardview_audios_layout.view.*
 import kotlinx.android.synthetic.main.cardview_upper_audios_layout.view.*
-import kotlinx.android.synthetic.main.menu_toolbar.*
 import kotlinx.android.synthetic.main.table_layout.*
 import kotlinx.android.synthetic.main.upper_table_layout.*
 
@@ -52,21 +50,6 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
-        shareButton.setOnClickListener {
-            val s = ("I am using an amazing Sleep Relaxation application to fall asleep very quickly - download now: https://play.google.com/store/apps/details?id=com.iuriidolotov.premiumsleepytime")
-            //Intent to share the text
-            val shareIntent = Intent()
-            shareIntent.action = Intent.ACTION_SEND
-            shareIntent.type="text/plain"
-            shareIntent.putExtra(Intent.EXTRA_TEXT, s)
-            startActivity(Intent.createChooser(shareIntent,"Share via:"))
-        }
-
-        rateButton.setOnClickListener {
-            val rate = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.iuriidolotov.premiumsleepytime"))
-            startActivity(rate)
-        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -101,6 +84,7 @@ class HomeFragment : Fragment() {
 
             override fun onBindViewHolder(holder: MyViewHolder, position: Int, model: Model) {
                 val refid = getRef(position).key.toString()
+                println(refid);
 
                 ref.child(refid).addValueEventListener(object: ValueEventListener {
                     override fun onCancelled(p0: DatabaseError) {

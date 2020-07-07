@@ -8,7 +8,7 @@
 // THE ILLEGAL DISTRIBUTION IS PROHIBITED
 //
 
-package com.iuriidolotov.sleepytime.Fragments
+package com.ccdhb.navgo.Fragments
 
 
 import android.content.Intent
@@ -18,7 +18,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.iuriidolotov.sleepytime.R
+import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.settings_layout.*
 
 
@@ -35,7 +35,7 @@ class SettingsFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         premiumButton.setOnClickListener {
-            val rate = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.iuriidolotov.premiumsleepytime"))
+            val rate = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.ccdhb.navgo"))
             startActivity(rate)
         }
     }

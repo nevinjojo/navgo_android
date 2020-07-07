@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:703450474484:android:67ac6a11cde9b0ed5c7ba1",
         "android_client_info": {
-          "package_name": "com.iuriidolotov.premiumsleepytime"
+          "package_name": "com.ccdhb.navgo"
         }
       },
       "oauth_client": [
@@ -46,7 +46,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:703450474484:android:ec5c6979d92b3e195c7ba1",
         "android_client_info": {
-          "package_name": "com.iuriidolotov.sleepytime"
+          "package_name": "com.ccdhb.navgo"
         }
       },
       "oauth_client": [

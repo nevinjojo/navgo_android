@@ -8,12 +8,12 @@
 // THE ILLEGAL DISTRIBUTION IS PROHIBITED
 //
 
-package com.iuriidolotov.sleepytime.Activities
+package com.ccdhb.navgo.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.iuriidolotov.sleepytime.R
+import com.ccdhb.navgo.R
 
 class SplashActivity: AppCompatActivity() {
 

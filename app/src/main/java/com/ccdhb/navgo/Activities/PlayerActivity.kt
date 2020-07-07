@@ -1,4 +1,4 @@
-package com.iuriidolotov.sleepytime.Activities
+package com.ccdhb.navgo.Activities
 
 import android.content.Intent
 import android.media.AudioManager
@@ -8,12 +8,8 @@ import android.os.Handler
 import android.util.Log
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.InterstitialAd
-import com.google.android.gms.ads.MobileAds
-import com.iuriidolotov.sleepytime.R
-import com.iuriidolotov.sleepytime.Fragments.audioUrlPass
+import com.ccdhb.navgo.R
+import com.ccdhb.navgo.Fragments.audioUrlPass
 import kotlinx.android.synthetic.main.player_layout.*
 import kotlinx.android.synthetic.main.toolbar.*
 

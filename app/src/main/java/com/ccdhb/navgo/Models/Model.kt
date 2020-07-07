@@ -1,4 +1,4 @@
-package com.iuriidolotov.sleepytime.Models
+package com.ccdhb.navgo.Models
 
 class Model {
     var imageDownloadURL: String? = null
