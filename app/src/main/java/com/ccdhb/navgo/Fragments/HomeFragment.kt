@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
         upperRecycleView = tableViewUpper
 
         ref = FirebaseDatabase.getInstance().getReference().child("content")
-        refUpper = FirebaseDatabase.getInstance().getReference().child("featuredContent")
+        refUpper = FirebaseDatabase.getInstance().getReference().child("pointsOfInterest")
 
         recycleView.layoutManager = LinearLayoutManager(context)
         upperRecycleView.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
