@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:tint="@color/colorToolbarItem"
+        android:layout_gravity="start"
+        android:contentDescription="@string/app_name"
+        android:background="@null"
+        android:id="@+id/rateButton"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"
+        android:tint="@color/colorToolbarItem"
+        android:rotation="180"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/app_name"
+        android:background="@null"
+        android:id="@+id/shareButton"/>
+
+</androidx.appcompat.widget.Toolbar>

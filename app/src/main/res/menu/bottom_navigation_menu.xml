@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainOption"
+        android:icon="@drawable/ic_layer"
+        android:title="" />
+
+    <item
+        android:id="@+id/soundOption"
+        android:icon="@drawable/ic_moon"
+        android:title="" />
+
+    <item
+        android:id="@+id/breathOption"
+        android:icon="@drawable/ic_breath"
+        android:title="" />
+
+</menu>

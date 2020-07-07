@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimaryDark">
+
+	<ImageView
+		android:id="@+id/playerBackgroundImage"
+		android:contentDescription="@string/app_name"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@mipmap/bgimage"/>
+
+	<TextView
+		android:id="@+id/mainText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/upgrade_text"
+		android:textAllCaps="false"
+		android:textColor="@color/colorAccent"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		app:autoSizeTextType="uniform"
+		android:gravity="center"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginTop="30dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/secondaryText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/enjoy_the_app_without_advertisement_and_enjoy_additional_features"
+		android:textAllCaps="false"
+		android:textColor="@color/colorAccentLight"
+		android:textSize="22sp"
+		android:textStyle="normal"
+		app:autoSizeTextType="uniform"
+		android:gravity="center"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginTop="10dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/mainText"/>
+
+	<Button
+		android:id="@+id/premiumButton"
+		android:layout_width="250dp"
+		android:layout_height="60dp"
+		android:background="@drawable/rounded_button"
+		android:text="@string/upgrade_to_premium"
+		android:textStyle="normal"
+		android:textSize="18sp"
+		android:layout_marginBottom="30dp"
+		app:layout_constraintBottom_toTopOf="@id/underButtonText"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/underButtonText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/a_one_time_purchase_will_help_us_develop_the_application_and_make_it_even_more_interesting"
+		android:textAllCaps="false"
+		android:textColor="@color/colorAccentLight"
+		android:textSize="22sp"
+		android:textStyle="normal"
+		app:autoSizeTextType="uniform"
+		android:gravity="center"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginBottom="30dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
