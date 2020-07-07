@@ -33,7 +33,7 @@
 		android:background="#00FFFFFF"
 		android:textSize="20sp"
 		android:text="@string/get_started"
-		android:textColor="@color/colorWhite" />
+		android:textColor="@color/colorHeading" />
 
 	<TextView
 		android:id="@+id/textView"
@@ -47,7 +47,7 @@
 		android:textSize="30sp"
 		android:textStyle="bold"
 		android:text="@string/breathing_exercise_to_sleep_better"
-		android:textColor="@color/colorWhite"/>
+		android:textColor="@color/colorHeading"/>
 
 	<com.google.android.gms.ads.AdView
 		android:id="@+id/adView"

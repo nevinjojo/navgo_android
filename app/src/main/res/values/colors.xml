@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#3A3B6F</color>
+    <color name="colorPrimaryDark">#F8F9FB</color>
     <color name="colorAccent">#C2B1F9</color>
     <color name="colorAccentLight">#7975B8</color>
-    <color name="colorBarTint">#7975B8</color>
+    <color name="colorBarTint">#FF535F</color>
     <color name="colorToolbarItem">#7975B8</color>
     <color name="colorCardBackground">#555293</color>
     <color name="colorSoundsText">#C6B3FB</color>
     <color name="colorSoundsTable">#494788</color>
     <color name="colorBlueWhite">#F4F4FE</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorGrey">#8B8B8B</color>
-    <color name="colorBlack">#1F2124</color>
+    <color name="colorHeading">#323F4A</color>
+    <color name="colorGrey">#9AA5B0</color>
+    <color name="colorBlack">#323F4A</color>
 </resources>

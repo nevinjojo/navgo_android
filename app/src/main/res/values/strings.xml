@@ -15,4 +15,12 @@
     <string name="AdMobAppId">ca-app-pub-7175817548312954~8979784432</string>
     <string name="AdMobAppBannerId">ca-app-pub-7175817548312954/8442111274</string>
     <string name="AdMobAppInterstitialId">ca-app-pub-7175817548312954/4908677485</string>
+    <string-array name="pointsOfInterest">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+        <item>item5</item>
+        <item>item6</item>
+    </string-array>
 </resources>
