@@ -23,7 +23,7 @@
         </activity>
         <activity android:name=".Activities.MainActivity">
         </activity>
-        <activity android:name=".Activities.PlayerActivity">
+        <activity android:name=".Activities.MapActivity">
         </activity>
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

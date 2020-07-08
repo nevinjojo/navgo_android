@@ -2,15 +2,14 @@ package com.ccdhb.navgo.Fragments
 
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.ImageView
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
+import androidx.fragment.app.Fragment
+import com.ccdhb.navgo.Activities.MapActivity
 import com.ccdhb.navgo.Models.Facility
 import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.facilities_row.view.*
@@ -30,6 +29,13 @@ class FacilitiesFragment : Fragment() {
 
         val pointsOfInterestListView = activity!!.findViewById<ListView>(R.id.pointsOfInterestListView)
         pointsOfInterestListView.adapter = PointsOfInterestAdapter(activity!!)
+        pointsOfInterestListView.setOnItemClickListener { _: AdapterView<*>, _: View, position: Int, _: Long ->
+            val intent = Intent(activity, MapActivity::class.java)
+            val facility = pointsOfInterestListView.getItemAtPosition(position) as Facility
+            intent.putExtra("Name", facility.name)
+            intent.putExtra("Floor", facility.floor)
+            startActivity(intent)
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -69,7 +75,7 @@ class FacilitiesFragment : Fragment() {
         }
 
         override fun getItem(position: Int): Any {
-            return "TEST STRING"
+            return facilities.get(position)
         }
 
         override fun getItemId(position: Int): Long {
@@ -84,7 +90,7 @@ class FacilitiesFragment : Fragment() {
         /**
          * Returns an ArrayList of Facility objects.
          */
-        private fun createFacilities(): ArrayList<Facility> {
+        fun createFacilities(): ArrayList<Facility> {
             val newFacilities = ArrayList<Facility>()
             newFacilities.add(Facility("Main Entrance", 2, R.color.colorGreen, R.drawable.ic_main_entrance))
             newFacilities.add(Facility("Eye Clinic", 9, R.color.colorBlue, R.drawable.ic_eye_clinic))

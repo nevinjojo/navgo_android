@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.*
-import com.ccdhb.navgo.Activities.PlayerActivity
+import com.ccdhb.navgo.Activities.MapActivity
 import com.ccdhb.navgo.Models.Model
 import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.cardview_audios_layout.view.*
@@ -68,7 +68,7 @@ class SoundsFragment : Fragment() {
                         holder.mtitle.setText(model.caption)
                         holder.itemView.setOnClickListener {
 
-                            val intent = Intent(context, PlayerActivity::class.java)
+                            val intent = Intent(context, MapActivity::class.java)
                             intent.putExtra("Title", model.caption!!)
                             startActivity(intent)
                         }

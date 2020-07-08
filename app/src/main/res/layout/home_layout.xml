@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/include3"
-        layout="@layout/menu_toolbar" />
+        layout="@layout/map_toolbar" />
 
     <TextView
         android:id="@+id/featuredText"
