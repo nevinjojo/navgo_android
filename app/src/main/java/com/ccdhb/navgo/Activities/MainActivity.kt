@@ -3,7 +3,7 @@ package com.ccdhb.navgo.Activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.ccdhb.navgo.Fragments.BreathFragment
+import com.ccdhb.navgo.Fragments.FacilitiesFragment
 import com.ccdhb.navgo.Fragments.HomeFragment
 import com.ccdhb.navgo.R
 import com.ccdhb.navgo.Fragments.SoundsFragment
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 menuItem.itemId == R.id.breathOption -> {
-                    loadFragment(BreathFragment())
+                    loadFragment(FacilitiesFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
 
