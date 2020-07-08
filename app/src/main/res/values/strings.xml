@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">NavGo</string>
+    <string name="app_description">A Hospital Wayfinding Solution By CCDHB Wellington</string>
     <string name="title_placeholder">Title placeholder</string>
     <string name="description_placeholder">Description placeholder</string>
+    <string name="appointments">Appointments</string>
     <string name="points_of_interest">Points of Interest</string>
     <string name="popular_facilities">Popular Facilities</string>
     <string name="settings">Settings</string>
