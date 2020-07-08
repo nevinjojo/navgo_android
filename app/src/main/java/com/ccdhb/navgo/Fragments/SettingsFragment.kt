@@ -14,6 +14,7 @@ package com.ccdhb.navgo.Fragments
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -34,9 +35,10 @@ class SettingsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        premiumButton.setOnClickListener {
-            val rate = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.ccdhb.navgo"))
-            startActivity(rate)
+        accessibilityButton.setOnClickListener {
+            // Open the Android accessibility settings activity
+            val settingsIntent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+            startActivity(settingsIntent)
         }
     }
 

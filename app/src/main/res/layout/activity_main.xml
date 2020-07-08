@@ -14,7 +14,9 @@
         android:background="@drawable/bottom_navigation_background"
         android:elevation="8dp"
         app:itemIconTint="@drawable/bottom_navigation_color_selector"
-        app:labelVisibilityMode="unlabeled"
+        app:itemTextColor="@drawable/bottom_navigation_color_selector"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,7 +26,7 @@
         android:id="@+id/viewDivider"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorGrey"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation" />
 
     <FrameLayout

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/mainOption"
-        android:icon="@drawable/ic_facilities"
-        android:title="" />
-
-    <item
-        android:id="@+id/soundOption"
+        android:id="@+id/mapOption"
         android:icon="@drawable/ic_map"
-        android:title="" />
+        android:title="Map" />
 
     <item
-        android:id="@+id/breathOption"
+        android:id="@+id/facilitiesOption"
+        android:icon="@drawable/ic_facilities"
+        android:title="Facilities" />
+
+    <item
+        android:id="@+id/settingsOption"
         android:icon="@drawable/ic_settings"
-        android:title="" />
+        android:title="Settings" />
 
 </menu>

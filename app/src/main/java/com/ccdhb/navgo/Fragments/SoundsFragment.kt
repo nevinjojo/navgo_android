@@ -68,7 +68,6 @@ class SoundsFragment : Fragment() {
                         holder.mtitle.setText(model.caption)
                         holder.itemView.setOnClickListener {
 
-                            audioUrlPass = model.audioURL!!
                             val intent = Intent(context, PlayerActivity::class.java)
                             intent.putExtra("Title", model.caption!!)
                             startActivity(intent)

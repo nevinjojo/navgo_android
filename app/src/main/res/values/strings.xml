@@ -4,23 +4,12 @@
     <string name="description_placeholder">Description placeholder</string>
     <string name="points_of_interest">Points of Interest</string>
     <string name="popular_facilities">Popular Facilities</string>
-    <string name="timer_placeholder">00:00:00</string>
-    <string name="get_started">Get started</string>
-    <string name="breathing_exercise_to_sleep_better">Breathing exercise to sleep better</string>
-    <string name="upgrade_text">Upgrade to PREMIUM AND ADS FREE version</string>
-    <string name="enjoy_the_app_without_advertisement_and_enjoy_additional_features">Enjoy the app without advertisement and enjoy your relaxation</string>
-    <string name="a_one_time_purchase_will_help_us_develop_the_application_and_make_it_even_more_interesting">A one-time purchase will help us develop the application and make it even more interesting.</string>
-    <string name="upgrade_to_premium">Upgrade to premium</string>
+    <string name="settings">Settings</string>
+    <string name="open_accessibility_settings">Open Accessibility Settings</string>
+    <string name="terms_of_use_title">Terms of Use</string>
+    <string name="terms_of_use_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
 
     <string name="AdMobAppId">ca-app-pub-7175817548312954~8979784432</string>
     <string name="AdMobAppBannerId">ca-app-pub-7175817548312954/8442111274</string>
     <string name="AdMobAppInterstitialId">ca-app-pub-7175817548312954/4908677485</string>
-    <string-array name="pointsOfInterest">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
-        <item>item5</item>
-        <item>item6</item>
-    </string-array>
 </resources>

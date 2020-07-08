@@ -18,5 +18,10 @@
     <style name="SeekBarTheme" parent="Widget.AppCompat.SeekBar">
         <item name="colorAccent">@color/colorBlueWhite</item>
     </style>
+    
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/sf_ui_display_bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
 
 </resources>
