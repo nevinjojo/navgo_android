@@ -10,8 +10,4 @@
     <string name="open_accessibility_settings">Open Accessibility Settings</string>
     <string name="terms_of_use_title">Terms of Use</string>
     <string name="terms_of_use_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
-
-    <string name="AdMobAppId">ca-app-pub-7175817548312954~8979784432</string>
-    <string name="AdMobAppBannerId">ca-app-pub-7175817548312954/8442111274</string>
-    <string name="AdMobAppInterstitialId">ca-app-pub-7175817548312954/4908677485</string>
 </resources>
