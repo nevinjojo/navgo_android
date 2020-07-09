@@ -17,10 +17,28 @@ import java.util.*
 
 class MapActivity: AppCompatActivity(), OnFragmentInteractionListener {
 
+    private var mapwizeFragment: MapwizeFragment? = null
+    private val sourceId = ""
+    private var destinationId: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.map_layout)
 
+        // Fetch Destination Information
+        val bundle: Bundle? = intent.extras
+        val facilityName: String? = bundle!!.getString("Name")
+        val facilityFloor: String? = bundle.getString("Floor")
+        destinationId = bundle.getString("DestinationID").toString()
+        println("facility name: $facilityName, facility floor:  $facilityFloor, placeID:  $destinationId")
+
+        // Back
+        closeButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Initialise the Mapwize UI
         val opts = MapOptions.Builder()
             .language(Locale.getDefault().language)
             .universe("5d37a075ea07e8001673a95d")
@@ -29,26 +47,14 @@ class MapActivity: AppCompatActivity(), OnFragmentInteractionListener {
         val uiSettings = MapwizeFragmentUISettings.Builder()
             .menuButtonHidden(true)
             .build()
-        val frag = MapwizeFragment.newInstance(opts, uiSettings)
+        mapwizeFragment = MapwizeFragment.newInstance(opts, uiSettings)
 
         val fm = supportFragmentManager
         val ft = fm.beginTransaction()
-        ft.add(R.id.mapFragmentContainer, frag)
+        ft.add(R.id.mapFragmentContainer, mapwizeFragment!!)
         ft.commit()
 
-        val bundle: Bundle? = intent.extras
-        val facilityName: String? = bundle!!.getString("Name")
-        val facilityFloor: String? = bundle.getString("Floor")
-        println("facility name: $facilityName, facility floor:  $facilityFloor")
-        if (facilityFloor == null) {
-            // We might not need floor information. Only implement it if Mapwize requests for it.
-            // TODO: Do something if floor information is not available
-        }
-
-        menuButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+        supportActionBar?.hide()
     }
 
     override fun onBackPressed() {
