@@ -24,14 +24,11 @@ allprojects {
     repositories {
         google()
         jcenter()
-
-        maven {
-            url 'https://jitpack.io'
-        }
-
-        maven {
-            url "https://maven.google.com"
-        }
+        // Mapwize repository
+        maven { url 'https://maven.mapwize.io'}
+        // Mapwize open source dependencies repository
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
     }
 }
 
