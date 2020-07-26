@@ -1,31 +1,32 @@
-//
-// THIS APPLICATION WAS DEVELOPED BY IURII DOLOTOV
-//
-// IF YOU HAVE ANY QUESTIONS PLEASE DO NOT TO HESITATE TO CONTACT ME VIA MARKETPLACE OR EMAIL: utilityman.development@gmail.com
-//
-// THE AUTHOR REMAINS ALL RIGHTS TO THE PROJECT
-//
-// THE ILLEGAL DISTRIBUTION IS PROHIBITED
-//
-
 package com.ccdhb.navgo.Activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.ccdhb.navgo.R
 
+
 class SplashActivity: AppCompatActivity() {
+
+    private var mPreferences: SharedPreferences? = null
+    private var sharedPrefFile = "com.ccdhb.navgo"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
 
+        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+
         val background = object : Thread() {
             override fun run(){
                 try {
                     sleep(1500)
-                    val intent = Intent(baseContext, MainActivity::class.java)
+                    var intent = Intent(baseContext, MainActivity::class.java)
+                    if (mPreferences!!.getBoolean("firstrun", true)) {
+                        intent = Intent(baseContext, OnboardingActivity::class.java)
+                        mPreferences!!.edit().putBoolean("firstrun", false).apply();
+                    }
                     startActivity(intent)
                 } catch (e: Exception) {
                     e.printStackTrace()

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/appointmentsTextView"
@@ -14,21 +14,46 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/appointments"
         android:fontFamily="@font/sf_ui_display_bold"
         android:text="@string/appointments"
         android:textColor="@color/colorHeading"
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/voiceCommandButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:contentDescription="@string/voice_command"
+        android:drawableStart="@drawable/ic_mic"
+        android:fontFamily="@font/sf_ui_display_bold"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/voice_command"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlueWhite"
+        android:textSize="18sp" />
+
     <ListView
-        android:id="@+id/appointsListView"
+        android:id="@+id/appointmentsListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/appointmentsTextView"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:divider="@null">
-
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20.0sp"
+        android:layout_above="@id/voiceCommandButton">
     </ListView>
 
 </RelativeLayout>

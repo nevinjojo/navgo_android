@@ -11,6 +11,7 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import com.ccdhb.navgo.Activities.MapActivity
 import com.ccdhb.navgo.Models.Facility
+import com.ccdhb.navgo.Models.NavGoApplication
 import com.ccdhb.navgo.R
 import kotlinx.android.synthetic.main.facilities_row.view.*
 
@@ -47,7 +48,7 @@ class FacilitiesFragment : Fragment() {
 
         private val mContext: Context
 
-        private val facilities = createFacilities()
+        private val facilities = NavGoApplication.facilities
 
         init {
             this.mContext = context
@@ -69,8 +70,9 @@ class FacilitiesFragment : Fragment() {
             }
 
             val viewHolder = facilitiesRow.tag as ViewHolder
-            viewHolder.nameTextView.text = facilities.get(position).name
-            viewHolder.iconImageView.setImageResource(facilities.get(position).icon!!)
+            viewHolder.nameTextView.text = facilities[position].name
+            viewHolder.iconImageView.setImageResource(facilities[position].icon!!)
+            viewHolder.nameTextView.contentDescription = facilities[position].name
 
             return facilitiesRow
         }
@@ -86,25 +88,6 @@ class FacilitiesFragment : Fragment() {
         // Responsible for how many rows there will be in the list
         override fun getCount(): Int {
             return facilities.size
-        }
-
-        /**
-         * Returns an ArrayList of Facility objects.
-         */
-        fun createFacilities(): ArrayList<Facility> {
-            val newFacilities = ArrayList<Facility>()
-            newFacilities.add(Facility("Main Entrance", 2, R.color.colorGreen, R.drawable.ic_main_entrance, "5d553553ea35b90050c05ce7"))
-            newFacilities.add(Facility("Eye Clinic", 9, R.color.colorBlue, R.drawable.ic_eye_clinic, "5d54c846e7a9e8001697a213"))
-            newFacilities.add(Facility("Link Bridge", 3, R.color.colorGreen, R.drawable.ic_link_bridge, "5d54cf1fa387b40016514eb7"))
-            newFacilities.add(Facility("Intensive Care", 3, R.color.colorRed, R.drawable.ic_intensive_care_unit, "5d78e53aaa0a83002c1a4deb"))
-            newFacilities.add(Facility("Gift Shop", 2, R.color.colorBlue, R.drawable.ic_gift_shop, "5d78e5daaa0a83002c1a4df3"))
-            newFacilities.add(Facility("Cafe", 2, R.color.colorBlue, R.drawable.ic_cafe, "5d54ce0b64e9c30016cbf3d8"))
-//            newFacilities.add(Facility("Lift A", 1, R.color.colorGreen, R.drawable.ic_lift_a))
-//            newFacilities.add(Facility("Lift B", 1, R.color.colorGreen, R.drawable.ic_lift_b))
-//            newFacilities.add(Facility("Lift C", 1, R.color.colorGreen, R.drawable.ic_lift_c))
-//            newFacilities.add(Facility("Underground Car Park", 1, R.color.colorRed, R.drawable.ic_parking))
-
-            return newFacilities
         }
 
         /**

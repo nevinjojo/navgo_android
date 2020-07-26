@@ -7,23 +7,24 @@
 	android:background="@color/colorPrimaryDark">
 
 	<TextView
-		android:id="@+id/SettingsTitleText"
+		android:id="@+id/SettingsTitleTextView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/settings"
-		android:textAllCaps="false"
-		android:textColor="@color/colorHeading"
-		android:fontFamily="@font/sf_ui_display_bold"
-		android:textSize="30sp"
-		android:textStyle="bold"
-		app:autoSizeTextType="uniform"
-		android:gravity="left"
 		android:layout_marginStart="28dp"
 		android:layout_marginTop="35dp"
 		android:layout_marginEnd="28dp"
+		android:contentDescription="@string/settings"
+		android:fontFamily="@font/sf_ui_display_bold"
+		android:gravity="left"
+		android:text="@string/settings"
+		android:textAllCaps="false"
+		android:textColor="@color/colorHeading"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		app:autoSizeTextType="uniform"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"/>
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<Button
 		android:id="@+id/accessibilityButton"
@@ -31,53 +32,65 @@
 		android:layout_height="60dp"
 		android:layout_marginTop="50dp"
 		android:background="@drawable/rounded_button"
+		android:contentDescription="@string/open_accessibility_settings"
 		android:fontFamily="@font/sf_ui_display_bold"
 		android:paddingStart="20dp"
 		android:paddingEnd="20dp"
 		android:text="@string/open_accessibility_settings"
 		android:textAllCaps="false"
 		android:textColor="@color/colorPrimary"
-		android:textSize="18sp"
+		android:textSize="20sp"
 		android:textStyle="normal"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.494"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/SettingsTitleText" />
+		app:layout_constraintTop_toBottomOf="@+id/SettingsTitleTextView" />
 
-	<TextView
-		android:id="@+id/tersmOfUseTitle"
-		android:layout_width="match_parent"
+	<RelativeLayout
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:fontFamily="@font/sf_ui_display_medium"
-		android:gravity="left"
-		android:text="@string/terms_of_use_title"
-		android:textAllCaps="false"
-		android:textColor="@color/colorHeading"
-		android:textSize="20sp"
-		android:textStyle="bold"
-		app:autoSizeTextType="uniform"
-		android:layout_marginStart="28dp"
-		android:layout_marginEnd="28dp"
-		app:layout_constraintBottom_toTopOf="@+id/tersmOfUseText" />
-
-	<TextView
-		android:id="@+id/tersmOfUseText"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="28dp"
-		android:layout_marginEnd="28dp"
 		android:layout_marginBottom="28dp"
-		android:fontFamily="@font/sf_ui_display_regular"
-		android:gravity="left"
-		android:text="@string/terms_of_use_text"
-		android:textAllCaps="false"
-		android:textColor="@color/colorGrey"
-		android:textSize="16sp"
-		android:textStyle="normal"
-		app:autoSizeTextType="uniform"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent" />
+		app:layout_constraintStart_toStartOf="parent">
+
+		<TextView
+			android:id="@+id/tersmOfUseTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/terms_of_use_title"
+			android:layout_marginStart="28dp"
+			android:layout_marginEnd="28dp"
+			android:fontFamily="@font/sf_ui_display_medium"
+			android:gravity="left"
+			android:text="@string/terms_of_use_title"
+			android:textAllCaps="false"
+			android:textColor="@color/colorHeading"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:autoSizeTextType="uniform"
+			app:layout_constraintBottom_toTopOf="@+id/tersmOfUseText" />
+
+		<TextView
+			android:id="@+id/tersmOfUseText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="28dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="28dp"
+			android:layout_marginBottom="28dp"
+			android:fontFamily="@font/sf_ui_display_regular"
+			android:gravity="left"
+			android:text="@string/terms_of_use_text"
+			android:textAllCaps="false"
+			android:textColor="@color/colorGrey"
+			android:textSize="16sp"
+			android:textStyle="normal"
+			app:autoSizeTextType="uniform"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent" />
+	</RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

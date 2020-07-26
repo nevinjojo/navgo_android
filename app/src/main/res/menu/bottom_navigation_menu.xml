@@ -2,17 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/mapOption"
-        android:icon="@drawable/ic_map"
-        android:title="Map" />
+        android:icon="@drawable/ic_home"
+        android:contentDescription="Home"
+        android:title="Home" />
 
     <item
         android:id="@+id/facilitiesOption"
         android:icon="@drawable/ic_facilities"
+        android:contentDescription="Facilities"
         android:title="Facilities" />
 
     <item
         android:id="@+id/settingsOption"
         android:icon="@drawable/ic_settings"
+        android:contentDescription="Settings"
         android:title="Settings" />
 
 </menu>
