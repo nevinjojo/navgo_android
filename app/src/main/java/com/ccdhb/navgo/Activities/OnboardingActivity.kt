@@ -21,28 +21,28 @@ class OnboardingActivity : AppIntro() {
             AppIntroFragment.newInstance(
                 title = "Indoor Navigation",
                 description = "Easily navigate around the hospital using the built-in map feature.",
-                imageDrawable = R.mipmap.splashimage
+                imageDrawable = R.mipmap.indoor_navigation
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
                 title = "Appointments",
                 description = "Keep track of all your appointments in one place.",
-                imageDrawable = R.mipmap.splashimage
+                imageDrawable = R.mipmap.appointments
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
                 title = "Facilities",
                 description = "Find all the nearby facilities in the hospital.",
-                imageDrawable = R.mipmap.splashimage
+                imageDrawable = R.mipmap.facilities
             )
         )
         addSlide(
             AppIntroFragment.newInstance(
                 title = "Accessibility",
                 description = "Utilise the accessibility features for a better user experience.",
-                imageDrawable = R.mipmap.splashimage
+                imageDrawable = R.mipmap.accessibility
             )
         )
     }
